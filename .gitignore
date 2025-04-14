@@ -1,0 +1,12 @@
+env/
+pycache/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.DS_Store
+*.log
+serviceAccount.json
+*.key
+*.pem
