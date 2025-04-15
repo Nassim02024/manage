@@ -26,7 +26,8 @@ app.secret_key = "zlsk_zkzs_slsl"
 # Firestore
 firebasedata = json.loads(os.getenv("SERVICE_ACCOUNT"))
 cred = credentials.Certificate(firebasedata)
- 
+firebase_admin = firebase_admin.initialize_app(cred)
+
 # cred = credentials.Certificate('serviceAccount.json')
 # firebase_admin = firebase_admin.initialize_app(cred)
 db = firestore.client()
